@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Onest';
+    src: local('Onest Medium'), local('Onest-Medium'),
+        url('Onest-Medium.woff2') format('woff2'),
+        url('Onest-Medium.woff') format('woff'),
+        url('Onest-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }

@@ -1,0 +1,125 @@
+.industry-leading {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &--title {
+        max-width: 407px;
+        margin-bottom: 70px;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 64px;
+
+        @media (max-width: 1320px) {
+            gap: 36px;
+        }
+
+        @media (max-width: 991px) {
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            gap: 0;
+        }
+    }
+
+    &__item {
+        width: 220px;
+        height: 220px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &:nth-child(1) {
+            background-image: url('/images/stat-1.png');
+
+            @media (max-width: 768px) {
+                background-position: left;
+                align-items: flex-start;
+            }
+        }
+
+        &:nth-child(2) {
+            background-image: url('/images/stat-2.png');
+
+            @media (max-width: 768px) {
+                background-position: right;
+                align-items: flex-end;
+            }
+        }
+
+        &:nth-child(3) {
+            background-image: url('/images/stat-3.png');
+
+            @media (max-width: 768px) {
+                background-position: left;
+                align-items: flex-start;
+            }
+        }
+
+        &:nth-child(4) {
+            background-image: url('/images/stat-4.png');
+
+            @media (max-width: 768px) {
+                background-position: right;
+                align-items: flex-end;
+            }
+        }
+
+        &--title {
+            margin-bottom: 10px;
+            text-align: center;
+            width: 220px;
+            font-size: 50px;
+            font-weight: 700;
+            color: var(--bt-primary, #fff);
+        }
+
+        &--subtitle {
+            color: var(--bt-secondary, #7D7D96);
+            text-align: center;
+            width: 220px;
+        }
+
+        @media (max-width: 1320px) {
+            width: 199px;
+            height: 199px;
+
+            &--title {
+                width: 199px;
+                font-size: 40px;
+            }
+
+            &--subtitle {
+                width: 199px; 
+            }
+        }
+
+        @media (max-width: 991px) {
+            width: 150px;
+            height: 150px;
+
+            &--title {
+                width: 150px;
+                font-size: 30px;
+            }
+
+            &--subtitle {
+                width: 150px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            width: 50%;
+        }
+    }
+}
