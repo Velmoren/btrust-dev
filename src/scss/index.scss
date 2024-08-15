@@ -4,6 +4,7 @@
 @import "./utils/bootstrap";
 
 @import "./template/elements/buttons";
+@import "./template/elements/logo";
 
 @import "./template/base";
 @import "./template/header";
@@ -12,4 +13,5 @@
 @import "./template/sections/hero";
 @import "./template/sections/industry-leading";
 @import "./template/sections/potential";
-@import "./template/sections/trading.scss";
+@import "./template/sections/trading";
+@import "./template/sections/steps";

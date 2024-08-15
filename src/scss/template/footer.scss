@@ -1,0 +1,95 @@
+.footer {
+    padding-top: 100px;
+    padding-bottom: 25px;
+    border-top: 1px solid #2E2E48;
+
+    &-nav {
+        &__main {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        &__social {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 15px;
+
+            &-item {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                border: 1px solid #2E2E48;
+                background-color: transparent;
+                transition: background-color .3s;
+
+                svg {
+                    path {
+                        transition: fill .3s;
+                        fill: #24EAA4;
+                    }
+                }
+
+                &:hover {
+                    background-color: #24EAA4;
+
+                    svg {
+                        path {
+                            fill: #121126;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__links {
+            display: flex;
+            flex-direction: column;
+
+            &--title {
+                color: var(--bt-secondary, #7D7D96);
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 500;
+                margin-bottom: 30px;
+            }
+
+            &--list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: var(--bt-primary, #fff);
+                        font-size: 16px;
+                        line-height: 22px;
+                        font-weight: 500;
+                        transition: color .3s;
+
+                        &:hover {
+                            color: #24EAA4;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__box {
+            row-gap: 50px;
+        }
+    }
+
+    &-copyright__info {
+        margin-top: 50px;
+        color: var(--bt-secondary, #7D7D96);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+}
