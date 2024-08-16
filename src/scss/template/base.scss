@@ -7,7 +7,38 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    background-color: #121126;
+    background: 
+    center top /100% no-repeat url('/public/images/hero-bg-light.svg'), 
+    calc(50% + 380px) 600px/700px no-repeat url('/public/images/globe.png'), 
+    #121126;
+
+    @media (max-width: 1320px) {
+        background: 
+        center top /100% no-repeat url('/public/images/hero-bg-light.svg'), 
+        calc(50% + 270px) 430px/550px no-repeat url('/public/images/globe.png'), 
+        #121126;
+    }
+
+    @media (max-width: 991px) {
+        background: 
+        center top /100% no-repeat url('/public/images/hero-bg-light.svg'), 
+        calc(50% + 180px) 785px/550px no-repeat url('/public/images/globe.png'), 
+        #121126;
+    }
+
+    @media (max-width: 768px) {
+        background: 
+        center top /100% no-repeat url('/public/images/hero-bg-light.svg'), 
+        calc(50% + 80px) 630px/550px no-repeat url('/public/images/globe.png'), 
+        #121126;
+    }
+
+    @media (max-width: 576px) {
+        background: 
+        center top /100% no-repeat url('/public/images/hero-bg-light.svg'), 
+        calc(50% + 50px) 550px/345px no-repeat url('/public/images/globe.png'), 
+        #121126;
+    }
 }
 
 main {
@@ -41,6 +72,10 @@ main {
 
     @media (max-width: 1320px) {
         font-size: 50px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 40px;
     }
 }
 

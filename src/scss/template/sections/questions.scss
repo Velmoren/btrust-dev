@@ -2,6 +2,11 @@
     padding-top: 75px;
     padding-bottom: 150px;
 
+    @media (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+
     &-head {
         display: flex;
         flex-direction: column;

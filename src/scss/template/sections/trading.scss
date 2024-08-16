@@ -1,6 +1,10 @@
 .trading {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 55px;
+    padding-bottom: 75px;
+
+    @media (max-width: 768px) {
+        padding-bottom: 60px;
+    }
 
     &-title {
         margin-bottom: 20px;
@@ -29,6 +33,8 @@
     }
 
     &-list {
+        margin-bottom: 40px;
+
         &__item {
             padding: 20px;
             border-radius: 20px;
@@ -70,6 +76,12 @@
                 gap: 10px;
                 flex-direction: column;
             }
+        }
+    }
+
+    @media (max-width: 576px) {
+        button {
+            width: 100%;
         }
     }
 }

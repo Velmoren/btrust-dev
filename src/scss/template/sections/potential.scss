@@ -1,6 +1,11 @@
 .potential {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    @media (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
     &-title {
         margin-bottom: 40px;

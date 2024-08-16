@@ -3,14 +3,19 @@
     align-items: center;
     text-decoration: none;
 
+    &-image {
+        width: 76px;
+        height: 85px;
+    }
+
     &-text {
         display: flex;
         flex-direction: column;
         margin-left: 8px;
 
         &__top {
-            font-size: 27px;
-            line-height: 27px;
+            font-size: 26px;
+            line-height: 26px;
             color: var(--bt-primary, #fff);
 
             .--bold {
@@ -28,6 +33,25 @@
             font-weight: 500;
 
             color: var(--bt-secondary, #7D7D96);
+        }
+    }
+
+    @media (max-width: 1320px) {
+        &-image {
+            width: 57px;
+            height: 64px;
+        }
+
+        &-text {
+            &__top {
+                font-size: 20px;
+                line-height: 20px;
+            }
+    
+            &__bottom {
+                font-size: 10px;
+                line-height: 10px;
+            }
         }
     }
 }

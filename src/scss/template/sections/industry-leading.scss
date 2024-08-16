@@ -1,6 +1,10 @@
 .industry-leading {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 75px;
+
+    @media (max-width: 768px) {
+        padding-bottom: 60px;
+    }
 
     &--title {
         max-width: 407px;
