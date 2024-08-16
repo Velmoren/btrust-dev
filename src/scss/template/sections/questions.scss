@@ -1,0 +1,88 @@
+.questions {
+    padding-top: 75px;
+    padding-bottom: 150px;
+
+    &-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 655px;
+        margin: 0 auto;
+    }
+
+    &-title {
+        margin-bottom: 20px;
+    }
+
+    &-list {
+        margin-top: 40px;
+
+        .accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            &-item {
+                background: linear-gradient(135.00deg, rgb(41, 43, 69) 0%,rgb(15, 18, 46) 100%);
+                border: none;
+                border-radius: 15px;
+                overflow: hidden;
+            }
+
+            &-button {
+                background-color: transparent;
+                box-shadow: none;
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 500;
+                color: var(--bt-primary, #fff);
+                padding: 20px;
+
+                &:focus, &:active {
+                    outline: none;
+                    box-shadow: none;
+                }
+
+                @media (max-width: 576px) {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+
+            &-body {
+                padding: 0 20px 20px 20px;
+
+                &__content {
+                    border-radius: 10px;
+                    background: linear-gradient(90.00deg, rgb(54, 57, 82),rgb(29, 32, 60) 100%);
+                    padding: 15px;
+                    font-size: 16px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    color: var(--bt-primary, #fff);
+                }
+
+                @media (max-width: 1320px) {
+                    &__content {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-control {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+
+        button {
+            padding: 18px 56px;
+
+            @media (max-width: 576px) {
+               width: 100%;
+            }
+        }
+    }
+}

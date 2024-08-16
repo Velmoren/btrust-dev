@@ -31,3 +31,8 @@ $gutters: (
   5: $spacer * 3,
   20px: 20px
 );
+$accordion-icon-color: #C270F8;
+$accordion-icon-active-color: #C270F8;
+
+$accordion-button-icon:         url('data:image/svg+xml,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 12.5H22" stroke="#{$accordion-icon-color}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 22.5V2.5" stroke="#{$accordion-icon-color}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+$accordion-button-active-icon:  url('data:image/svg+xml,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 12.5H22" stroke="#{$accordion-icon-active-color}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>');

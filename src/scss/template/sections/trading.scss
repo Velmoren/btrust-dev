@@ -10,9 +10,25 @@
         margin-bottom: 40px;
     }
 
+    &-image {
+        img {
+            width: 100%;
+        }
+    }
+
+    &-content {
+        padding-top: 90px;
+
+        @media (max-width: 991px) {
+            padding-top: 60px;
+        }
+
+        @media (max-width: 576px) {
+            padding-top: 40px;
+        }
+    }
+
     &-list {
-
-
         &__item {
             padding: 20px;
             border-radius: 20px;
@@ -49,7 +65,7 @@
                 }
             }
     
-            @media (max-width: 445px) {
+            @media (max-width: 576px) {
                 padding: 10px;
                 gap: 10px;
                 flex-direction: column;

@@ -1,0 +1,113 @@
+.custom-table {
+    display: flex;
+    justify-content: space-between;
+
+    &__desc {
+        margin-top: 64px;
+        min-width: 210px;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 500;
+            color: var(--bt-primary, #fff);
+            padding: 22px 0 22px 26px;
+            white-space: nowrap;
+
+            &:nth-child(odd) {
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+                background-color: rgb(54, 57, 82);
+            }
+        }
+    }
+
+    &__types {
+        display: flex;
+        width: calc(100%);
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: calc(100%);
+
+        &--title {
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #24EAA4;
+            height: 64px;
+        }
+
+        &--list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+
+            li {
+                width: 100%;
+                padding: 22px 26px;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 500;
+                color: var(--bt-primary, #fff);
+                white-space: nowrap;
+
+                &:nth-child(odd) {
+                    background-color: rgb(54, 57, 82);
+                }
+            }
+        }
+
+        &:last-child {
+            ul {
+                li {
+                    &:nth-child(odd) {
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1320px) {
+        &__desc {
+            li {
+                padding: 22px 0 22px 20px;
+
+                &:not(:first-child) {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+
+        &__types {
+            overflow-x: scroll;
+            scrollbar-width: none;
+            display: grid;
+            grid-template-columns: repeat(5, 170px);
+        }
+
+        &__item {
+            &--list {
+                li {
+                    padding: 22px 20px;
+
+                    &:not(:first-child) {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
