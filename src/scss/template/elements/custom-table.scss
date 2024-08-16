@@ -96,7 +96,7 @@
             display: grid;
             grid-template-columns: repeat(5, 170px);
         }
-        
+
         &__item {
             &--list {
                 li {
@@ -107,6 +107,26 @@
                         line-height: 16px;
                     }
                 }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__desc {
+            min-width: 180px;
+
+            li {
+                padding: 22px 0 22px 16px;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        &__desc {
+            min-width: 170px;
+
+            li {
+                padding: 22px 0 22px 10px;
             }
         }
     }
