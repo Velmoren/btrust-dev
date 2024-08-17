@@ -1,0 +1,11 @@
+.not-found-page {
+    background: center top /cover no-repeat url('/images/404-bg.png');
+
+    @media (max-width: 768px) {
+        background: center top /cover no-repeat url('/images/404-bg-light.png');
+    }
+
+    @media (max-width: 576px) {
+        background: center top /contain no-repeat url('/images/404-bg-light.png');
+    }
+}

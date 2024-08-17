@@ -1,0 +1,38 @@
+.not-found {
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 30vw;
+        padding-bottom: 75px;
+    }
+
+    @media (max-width: 1320px) {
+        &__box {
+            padding-top: 350px;
+        }
+    }
+
+    @media (max-width: 991px) {
+
+    }
+
+    @media (max-width: 768px) {
+        &__box {
+            padding-top: 450px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        &__box {
+            padding-top: 350px;
+        }
+    }
+
+    @media (max-width: 450px) {
+        &__box {
+            padding-top: 300px;
+        }
+    }
+}
