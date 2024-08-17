@@ -11,15 +11,9 @@
         margin-bottom: 20px;
     }
 
-    &-subtitle {
-        margin-bottom: 40px;
-
-        @media (max-width: 576px) {
-            margin-bottom: 30px;
-        }
-    }
-
     &-list {
+        margin-top: 40px;
+
         &__item {
             border-radius: 30px;
             border: 1px solid #2E2E48;
@@ -56,6 +50,18 @@
                     font-size: 50px;
                     line-height: 50px;
                     font-weight: 700;
+                }
+
+                &-img {
+                    position: relative;
+                    z-index: 2;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 10px;
+                    background-color: #24EAA4;
                 }
             }
 
@@ -102,6 +108,10 @@
                 gap: 20px;
                 padding: 20px;
             }
+        }
+
+        @media (max-width: 576px) {
+            margin-top: 30px;
         }
     }
 }

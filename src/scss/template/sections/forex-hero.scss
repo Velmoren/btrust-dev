@@ -1,7 +1,7 @@
-.faq-hero {
+.forex-hero {
     padding-top: 150px;
     padding-bottom: 218px;
-    background-image: url('/images/faq-img.png');
+    background-image: url('/images/forex-img.png');
     background-repeat: no-repeat;
     background-position: calc(50% + 300px) calc(50% + 25px);
     background-size: 700px;
@@ -28,7 +28,7 @@
 
     @media (max-width: 576px) {
         padding-top: 75px;
-        padding-bottom: 430px;
+        padding-bottom: 480px;
         background-position: 50% 250px;
         background-size: 580px;
 

@@ -1,8 +1,14 @@
 .footer {
     padding-top: 100px;
     padding-bottom: 25px;
+    margin-top: 75px;
     border-top: 1px solid #2E2E48;
     background-color: #121126;
+
+    @media (max-width: 768px) {
+        padding-top: 60px;
+        margin-top: 60px;
+    }
 
     &-nav {
         &__main {
