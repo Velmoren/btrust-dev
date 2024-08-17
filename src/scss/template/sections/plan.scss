@@ -1,17 +1,41 @@
 .plan {
-    padding-top: 75px;
-    padding-bottom: 75px;
-
-    @media (max-width: 768px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
+    &-wrapper {
+        padding: 75px 30px;
+        border-radius: 40px;
+        background: linear-gradient(135.00deg, rgb(41, 43, 69) 0%, rgb(15, 18, 46) 100%);
     }
 
     &-title {
         margin-bottom: 30px;
     }
+
+    &-radio {
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 991px) {
+        &-wrapper {
+            padding: 75px 20px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &-wrapper {
+            padding: 60px 20px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        &-wrapper {
+            padding: 60px 10px;
+        }
+
+        &-title {
+            margin-bottom: 20px;
+        }
+
+        &-radio {
+            margin-bottom: 20px;
+        }
+    }
 }
-
-
-
-
