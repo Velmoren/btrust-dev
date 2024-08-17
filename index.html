@@ -314,133 +314,253 @@
 
             <div class="row">
               <div class="col d-flex justify-content-center">
-                <div class="custom-button-group plan-radio">
+                <div class="custom-button-group plan-radio button-group-content">
                   <div class="custom-button-group__item">
-                    <input type="radio" class="btn-check" name="options" id="plan-radio-1" autocomplete="off" checked>
+                    <input type="radio" class="btn-check" name="plan-radio" id="plan-radio-1" autocomplete="off" checked data-tab-target="plan-content-1">
                     <label class="btn btn-secondary" for="plan-radio-1">1 Phase</label>
                   </div>
                   <div class="custom-button-group__item">
-                    <input type="radio" class="btn-check" name="options" id="plan-radio-2" autocomplete="off">
+                    <input type="radio" class="btn-check" name="plan-radio" id="plan-radio-2" autocomplete="off" data-tab-target="plan-content-2">
                     <label class="btn btn-secondary" for="plan-radio-2">2 Phase</label>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="row mb-5">
-              <div class="col">
-                <div class="custom-table custom-table__responsive">
-                  <ul class="custom-table__desc">
-                    <li>Profit Target</li>
-                    <li>Daily Loss Limit</li>
-                    <li>Max Trailing Drawdown</li>
-                    <li>Drawdown Type</li>
-                    <li>Minimum Trading Days</li>
-                    <li>Maximum Trading Days</li>
-                    <li>Performance split</li>
-                    <li>Leverage</li>
-                    <li>Refundable Fee</li>
-                  </ul>
-
-                  <ul class="custom-table__types">
-                    <li class="custom-table__item">
-                      <h5 class="custom-table__item--title">$25,000</h5>
-
-                      <ul class="custom-table__item--list">
-                        <li>$2,500</li>
-                        <li>5%</li>
-                        <li>6%</li>
-                        <li>Trailing</li>
-                        <li>5 days</li>
-                        <li>Unlimited</li>
-                        <li>up to 90%</li>
-                        <li>up to 50:1</li>
-                        <li>$199</li>
-                        <li>
-                          <button class="btn btn-success btn-sm">Start Trading</button>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="custom-table__item">
-                      <h5 class="custom-table__item--title">$25,000</h5>
-
-                      <ul class="custom-table__item--list">
-                        <li>$2,500</li>
-                        <li>5%</li>
-                        <li>6%</li>
-                        <li>Trailing</li>
-                        <li>5 days</li>
-                        <li>Unlimited</li>
-                        <li>up to 90%</li>
-                        <li>up to 50:1</li>
-                        <li>$199</li>
-                        <li>
-                          <button class="btn btn-success btn-sm">Start Trading</button>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="custom-table__item">
-                      <h5 class="custom-table__item--title">$25,000</h5>
-
-                      <ul class="custom-table__item--list">
-                        <li>$2,500</li>
-                        <li>5%</li>
-                        <li>6%</li>
-                        <li>Trailing</li>
-                        <li>5 days</li>
-                        <li>Unlimited</li>
-                        <li>up to 90%</li>
-                        <li>up to 50:1</li>
-                        <li>$199</li>
-                        <li>
-                          <button class="btn btn-success btn-sm">Start Trading</button>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="custom-table__item">
-                      <h5 class="custom-table__item--title">$25,000</h5>
-
-                      <ul class="custom-table__item--list">
-                        <li>$2,500</li>
-                        <li>5%</li>
-                        <li>6%</li>
-                        <li>Trailing</li>
-                        <li>5 days</li>
-                        <li>Unlimited</li>
-                        <li>up to 90%</li>
-                        <li>up to 50:1</li>
-                        <li>$199</li>
-                        <li>
-                          <button class="btn btn-success btn-sm">Start Trading</button>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="custom-table__item">
-                      <h5 class="custom-table__item--title">$25,000</h5>
-
-                      <ul class="custom-table__item--list">
-                        <li>$2,500</li>
-                        <li>5%</li>
-                        <li>6%</li>
-                        <li>Trailing</li>
-                        <li>5 days</li>
-                        <li>Unlimited</li>
-                        <li>up to 90%</li>
-                        <li>up to 50:1</li>
-                        <li>$199</li>
-                        <li>
-                          <button class="btn btn-success btn-sm">Start Trading</button>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+            <div class="tab-content" data-tab-name="plan-radio" data-tab-content="plan-content-1">
+              <div class="row mb-5">
+                <div class="col">
+                  <div class="custom-table custom-table__responsive">
+                    <ul class="custom-table__desc">
+                      <li>Profit Target</li>
+                      <li>Daily Loss Limit</li>
+                      <li>Max Trailing Drawdown</li>
+                      <li>Drawdown Type</li>
+                      <li>Minimum Trading Days</li>
+                      <li>Maximum Trading Days</li>
+                      <li>Performance split</li>
+                      <li>Leverage</li>
+                      <li>Refundable Fee</li>
+                    </ul>
+  
+                    <ul class="custom-table__types">
+                      <li class="custom-table__item">
+                        <h5 class="custom-table__item--title">$25,000</h5>
+  
+                        <ul class="custom-table__item--list">
+                          <li>$2,500</li>
+                          <li>5%</li>
+                          <li>6%</li>
+                          <li>Trailing</li>
+                          <li>5 days</li>
+                          <li>Unlimited</li>
+                          <li>up to 90%</li>
+                          <li>up to 50:1</li>
+                          <li>$199</li>
+                          <li>
+                            <button class="btn btn-success btn-sm">Start Trading</button>
+                          </li>
+                        </ul>
+                      </li>
+  
+                      <li class="custom-table__item">
+                        <h5 class="custom-table__item--title">$25,000</h5>
+  
+                        <ul class="custom-table__item--list">
+                          <li>$2,500</li>
+                          <li>5%</li>
+                          <li>6%</li>
+                          <li>Trailing</li>
+                          <li>5 days</li>
+                          <li>Unlimited</li>
+                          <li>up to 90%</li>
+                          <li>up to 50:1</li>
+                          <li>$199</li>
+                          <li>
+                            <button class="btn btn-success btn-sm">Start Trading</button>
+                          </li>
+                        </ul>
+                      </li>
+  
+                      <li class="custom-table__item">
+                        <h5 class="custom-table__item--title">$25,000</h5>
+  
+                        <ul class="custom-table__item--list">
+                          <li>$2,500</li>
+                          <li>5%</li>
+                          <li>6%</li>
+                          <li>Trailing</li>
+                          <li>5 days</li>
+                          <li>Unlimited</li>
+                          <li>up to 90%</li>
+                          <li>up to 50:1</li>
+                          <li>$199</li>
+                          <li>
+                            <button class="btn btn-success btn-sm">Start Trading</button>
+                          </li>
+                        </ul>
+                      </li>
+  
+                      <li class="custom-table__item">
+                        <h5 class="custom-table__item--title">$25,000</h5>
+  
+                        <ul class="custom-table__item--list">
+                          <li>$2,500</li>
+                          <li>5%</li>
+                          <li>6%</li>
+                          <li>Trailing</li>
+                          <li>5 days</li>
+                          <li>Unlimited</li>
+                          <li>up to 90%</li>
+                          <li>up to 50:1</li>
+                          <li>$199</li>
+                          <li>
+                            <button class="btn btn-success btn-sm">Start Trading</button>
+                          </li>
+                        </ul>
+                      </li>
+  
+                      <li class="custom-table__item">
+                        <h5 class="custom-table__item--title">$25,000</h5>
+  
+                        <ul class="custom-table__item--list">
+                          <li>$2,500</li>
+                          <li>5%</li>
+                          <li>6%</li>
+                          <li>Trailing</li>
+                          <li>5 days</li>
+                          <li>Unlimited</li>
+                          <li>up to 90%</li>
+                          <li>up to 50:1</li>
+                          <li>$199</li>
+                          <li>
+                            <button class="btn btn-success btn-sm">Start Trading</button>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <div class="tab-content d-none" data-tab-name="plan-radio" data-tab-content="plan-content-2">
+              <div class="row mb-5">
+                <div class="col">
+                  <div class="custom-table custom-table__responsive">
+                    <ul class="custom-table__desc">
+                      <li>Profit Target</li>
+                      <li>Daily Loss Limit</li>
+                      <li>Max Trailing Drawdown</li>
+                      <li>Drawdown Type</li>
+                      <li>Minimum Trading Days</li>
+                      <li>Maximum Trading Days</li>
+                      <li>Performance split</li>
+                      <li>Leverage</li>
+                      <li>Refundable Fee</li>
+                    </ul>
+  
+                    <ul class="custom-table__types">
+                      <li class="custom-table__item">
+                        <h5 class="custom-table__item--title">$25,000</h5>
+  
+                        <ul class="custom-table__item--list">
+                          <li>$2,500</li>
+                          <li>5%</li>
+                          <li>6%</li>
+                          <li>Trailing</li>
+                          <li>5 days</li>
+                          <li>Unlimited</li>
+                          <li>up to 90%</li>
+                          <li>up to 50:1</li>
+                          <li>$199</li>
+                          <li>
+                            <button class="btn btn-success btn-sm">Start Trading</button>
+                          </li>
+                        </ul>
+                      </li>
+  
+                      <li class="custom-table__item">
+                        <h5 class="custom-table__item--title">$25,000</h5>
+  
+                        <ul class="custom-table__item--list">
+                          <li>$2,500</li>
+                          <li>5%</li>
+                          <li>6%</li>
+                          <li>Trailing</li>
+                          <li>5 days</li>
+                          <li>Unlimited</li>
+                          <li>up to 90%</li>
+                          <li>up to 50:1</li>
+                          <li>$199</li>
+                          <li>
+                            <button class="btn btn-success btn-sm">Start Trading</button>
+                          </li>
+                        </ul>
+                      </li>
+  
+                      <li class="custom-table__item">
+                        <h5 class="custom-table__item--title">$25,000</h5>
+  
+                        <ul class="custom-table__item--list">
+                          <li>$2,500</li>
+                          <li>5%</li>
+                          <li>6%</li>
+                          <li>Trailing</li>
+                          <li>5 days</li>
+                          <li>Unlimited</li>
+                          <li>up to 90%</li>
+                          <li>up to 50:1</li>
+                          <li>$199</li>
+                          <li>
+                            <button class="btn btn-success btn-sm">Start Trading</button>
+                          </li>
+                        </ul>
+                      </li>
+  
+                      <li class="custom-table__item">
+                        <h5 class="custom-table__item--title">$25,000</h5>
+  
+                        <ul class="custom-table__item--list">
+                          <li>$2,500</li>
+                          <li>5%</li>
+                          <li>6%</li>
+                          <li>Trailing</li>
+                          <li>5 days</li>
+                          <li>Unlimited</li>
+                          <li>up to 90%</li>
+                          <li>up to 50:1</li>
+                          <li>$199</li>
+                          <li>
+                            <button class="btn btn-success btn-sm">Start Trading</button>
+                          </li>
+                        </ul>
+                      </li>
+  
+                      <li class="custom-table__item">
+                        <h5 class="custom-table__item--title">$25,000</h5>
+  
+                        <ul class="custom-table__item--list">
+                          <li>$2,500</li>
+                          <li>5%</li>
+                          <li>6%</li>
+                          <li>Trailing</li>
+                          <li>5 days</li>
+                          <li>Unlimited</li>
+                          <li>up to 90%</li>
+                          <li>up to 50:1</li>
+                          <li>$199</li>
+                          <li>
+                            <button class="btn btn-success btn-sm">Start Trading</button>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
