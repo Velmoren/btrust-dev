@@ -1,0 +1,83 @@
+.join-community {
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    @media (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 40px;
+        padding: 70px 260px;
+
+        background:
+            left calc(100% - 40px) / 150px no-repeat url('/images/discord-1.png'),
+            right calc(0% + 45px) / 150px no-repeat url('/images/discord-2.png'),
+            #24EAA4;
+
+        @media (max-width: 1320px) {
+            padding: 70px 160px;
+
+            background:
+                left calc(100% - 30px) / 100px no-repeat url('/images/discord-1.png'),
+                right calc(0% + 70px) / 100px no-repeat url('/images/discord-2.png'),
+                #24EAA4;
+        }
+
+        @media (max-width: 991px) {
+            padding: 70px 44px;
+
+            background:
+                left calc(100% - 30px) / 80px no-repeat url('/images/discord-1.png'),
+                right calc(100% - 20px) / 80px no-repeat url('/images/discord-2.png'),
+                #24EAA4;
+        }
+
+        @media (max-width: 768px) {
+            padding: 60px 30px;
+
+            background:
+                left calc(100% - 30px) / 50px no-repeat url('/images/discord-1.png'),
+                right calc(100% - 20px) / 50px no-repeat url('/images/discord-2.png'),
+                #24EAA4;
+        }
+
+        @media (max-width: 576px) {
+            padding: 50px 20px;
+
+            background:
+                right calc(100%) / 50px no-repeat url('/images/discord-2.png'),
+                #24EAA4;
+        }
+    }
+
+    &__title {
+        color: #121126;
+        margin-bottom: 30px;
+
+        @media (max-width: 480px) {
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
+
+    &__text {
+        color: #47465F;
+        margin-bottom: 30px;
+
+        @media (max-width: 480px) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__btn {
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+    }
+}

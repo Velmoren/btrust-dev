@@ -7,6 +7,7 @@
 @import "./template/elements/logo";
 @import "./template/elements/custom-table";
 @import "./template/elements/custom-button-group";
+@import "./template/elements/accordion";
 
 @import "./template/base";
 @import "./template/header";
@@ -14,6 +15,7 @@
 
 @import "./template/pages/main-page";
 @import "./template/pages/not-found-page";
+@import "./template/pages/faq-page";
 
 @import "./template/sections/hero";
 @import "./template/sections/industry-leading";
@@ -22,4 +24,10 @@
 @import "./template/sections/steps";
 @import "./template/sections/questions";
 @import "./template/sections/plan";
+@import "./template/sections/join-community";
+
+
+@import "./template/sections/faq-hero";
+@import "./template/sections/faq-questions";
+
 @import "./template/sections/not-found";

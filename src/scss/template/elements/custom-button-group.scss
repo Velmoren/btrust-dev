@@ -3,18 +3,25 @@
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 5%);
     display: flex;
+    align-items: center;
     gap: 10px;
 
     &__item {
+        height: 100%;
+
         label {
             background-color: transparent;
-            border: 1px solid transparent;
+            border: 2px solid transparent;
+            border-radius: 15px;
             box-shadow: none;
             font-size: 14px;
             line-height: 20px;
             font-weight: 700;
             color: var(--bt-primary, #fff);
             padding: 12px 40px;
+            height: 100%;
+            display: flex;
+            align-items: center;
 
             &:hover {
                 background-color: transparent !important;
@@ -22,11 +29,22 @@
                 box-shadow: none;
                 color: var(--bt-primary, #fff) !important;
             }
+
+            @media (max-width: 576px) {
+                font-size: 14px;
+                line-height: 14px;
+                padding: 10px 20px;
+            }
+
+            @media (max-width: 350px) {
+                padding: 10px 10px;
+            }
         }
 
         .btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
             background-color: rgba(255, 255, 255, 0.1) !important;
             border-color: #24EAA4;
+            border-radius: 15px;
             box-shadow: none;
             color: var(--bt-primary, #fff);
         }
