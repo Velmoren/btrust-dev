@@ -1,0 +1,39 @@
+.contact-hero {
+    padding-top: 150px;
+    padding-bottom: 218px;
+    background-image: url('/images/contact-img.png');
+    background-repeat: no-repeat;
+    background-position: calc(50% + 300px) calc(50% + 25px);
+    background-size: 700px;
+
+    &-title {
+        margin-bottom: 20px;
+    }
+
+    &-subtitle {
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 991px) {
+        padding-top: 75px;
+        padding-bottom: 575px;
+        background-position: 50% 200px;
+        background-size: 700px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 75px;
+        padding-bottom: 505px;
+    }
+
+    @media (max-width: 576px) {
+        padding-top: 75px;
+        padding-bottom: 480px;
+        background-position: 50% 250px;
+        background-size: 580px;
+
+        &-btn {
+            width: 100%;
+        }
+    }
+}

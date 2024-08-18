@@ -12,6 +12,7 @@ export default defineConfig({
         forex: resolve(__dirname, 'forex.html'),
         program: resolve(__dirname, 'program.html'),
         futures: resolve(__dirname, 'futures.html'),
+        contact: resolve(__dirname, 'contact.html'),
       },
     },
   },

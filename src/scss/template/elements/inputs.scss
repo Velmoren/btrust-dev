@@ -1,0 +1,30 @@
+.form-control {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #7D7D96;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 17px 27px;
+    outline: none;
+    box-shadow: none;
+    color: #FFFFFF;
+    resize: none;
+
+    &:active, &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    &:focus {
+        border: 1px solid #FFFFFF;
+        background: rgba(255, 255, 255, 0.05);
+        color: #FFFFFF;
+    }
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &.--error {
+        border: 1px solid #EB4040;
+    }
+}

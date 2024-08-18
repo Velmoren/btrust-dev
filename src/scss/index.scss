@@ -8,6 +8,7 @@
 @import "./template/elements/custom-table";
 @import "./template/elements/custom-button-group";
 @import "./template/elements/accordion";
+@import "./template/elements/inputs";
 
 @import "./template/base";
 @import "./template/header";
@@ -19,6 +20,7 @@
 @import "./template/pages/forex-page";
 @import "./template/pages/program-page";
 @import "./template/pages/futures-page";
+@import "./template/pages/contact-page";
 
 @import "./template/sections/hero";
 @import "./template/sections/industry-leading";
@@ -30,7 +32,6 @@
 @import "./template/sections/plan";
 @import "./template/sections/join-community";
 
-
 @import "./template/sections/faq-hero";
 @import "./template/sections/faq-questions";
 
@@ -39,5 +40,8 @@
 @import "./template/sections/program-hero";
 
 @import "./template/sections/futures-hero";
+
+@import "./template/sections/contact-hero";
+@import "./template/sections/contact-form";
 
 @import "./template/sections/not-found";
