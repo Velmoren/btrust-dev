@@ -1,3 +1,12 @@
 .futures-page {
-    background: center top / contain no-repeat url('/images/futures-bg.png')
+    background-image: url('/images/futures-bg.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+
+    @media (max-width: 991px) {
+        background-image: url('/images/futures-bg-light.png');
+        background-position: center top;
+        background-size: contain;
+    }
 }

@@ -1,29 +1,29 @@
 .main-page {
     background: 
-    center top /100% no-repeat url('/images/hero-bg-light.svg'), 
+    center top /100% no-repeat url('/images/main-bg.png'), 
     calc(50% + 380px) 600px/700px no-repeat url('/images/globe.png');
 
     @media (max-width: 1320px) {
         background: 
-        center top /100% no-repeat url('/images/hero-bg-light.svg'), 
+        center top /100% no-repeat url('/images/main-bg.png'), 
         calc(50% + 270px) 430px/550px no-repeat url('/images/globe.png');
     }
 
     @media (max-width: 991px) {
         background: 
-        center top /100% no-repeat url('/images/hero-bg-light.svg'), 
+        center top /100% no-repeat url('/images/main-bg-light.png'), 
         calc(50% + 180px) 785px/550px no-repeat url('/images/globe.png');
     }
 
     @media (max-width: 768px) {
         background: 
-        center top /100% no-repeat url('/images/hero-bg-light.svg'), 
+        center top /100% no-repeat url('/images/main-bg-light.png'), 
         calc(50% + 80px) 630px/550px no-repeat url('/images/globe.png');
     }
 
     @media (max-width: 576px) {
         background: 
-        center top /100% no-repeat url('/images/hero-bg-light.svg'), 
+        center top /100% no-repeat url('/images/main-bg-light.png'), 
         calc(50% + 50px) 550px/345px no-repeat url('/images/globe.png');
     }
 }

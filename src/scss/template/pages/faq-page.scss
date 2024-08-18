@@ -1,3 +1,12 @@
 .faq-page {
-    background: center top / cover no-repeat url('/images/faq-bg.png')
+    background-image: url('/images/faq-bg.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+
+    @media (max-width: 991px) {
+        background-image: url('/images/faq-bg-light.png');
+        background-position: center top;
+        background-size: contain;
+    }
 }
