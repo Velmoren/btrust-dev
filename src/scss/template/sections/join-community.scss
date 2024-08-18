@@ -19,6 +19,13 @@
             right calc(0% + 45px) / 150px no-repeat url('/images/discord-2.png'),
             #24EAA4;
 
+        &.--gold {
+            background:
+                left calc(100% - 40px) / 150px no-repeat url('/images/discord-1.png'),
+                right calc(0% + 45px) / 150px no-repeat url('/images/discord-2.png'),
+                linear-gradient(90.00deg, rgb(254, 229, 129), rgb(206, 144, 45) 100%);
+        }
+
         @media (max-width: 1320px) {
             padding: 70px 160px;
 
@@ -26,6 +33,13 @@
                 left calc(100% - 30px) / 100px no-repeat url('/images/discord-1.png'),
                 right calc(0% + 70px) / 100px no-repeat url('/images/discord-2.png'),
                 #24EAA4;
+
+            &.--gold {
+                background:
+                    left calc(100% - 30px) / 100px no-repeat url('/images/discord-1.png'),
+                    right calc(0% + 70px) / 100px no-repeat url('/images/discord-2.png'),
+                    linear-gradient(90.00deg, rgb(254, 229, 129), rgb(206, 144, 45) 100%);
+            }
         }
 
         @media (max-width: 991px) {
@@ -35,6 +49,13 @@
                 left calc(100% - 30px) / 80px no-repeat url('/images/discord-1.png'),
                 right calc(100% - 20px) / 80px no-repeat url('/images/discord-2.png'),
                 #24EAA4;
+
+            &.--gold {
+                background:
+                    left calc(100% - 30px) / 80px no-repeat url('/images/discord-1.png'),
+                    right calc(100% - 20px) / 80px no-repeat url('/images/discord-2.png'),
+                    linear-gradient(90.00deg, rgb(254, 229, 129), rgb(206, 144, 45) 100%);
+            }
         }
 
         @media (max-width: 768px) {
@@ -44,6 +65,13 @@
                 left calc(100% - 30px) / 50px no-repeat url('/images/discord-1.png'),
                 right calc(100% - 20px) / 50px no-repeat url('/images/discord-2.png'),
                 #24EAA4;
+
+            &.--gold {
+                background:
+                    left calc(100% - 30px) / 50px no-repeat url('/images/discord-1.png'),
+                    right calc(100% - 20px) / 50px no-repeat url('/images/discord-2.png'),
+                    linear-gradient(90.00deg, rgb(254, 229, 129), rgb(206, 144, 45) 100%);
+            }
         }
 
         @media (max-width: 576px) {
@@ -52,6 +80,12 @@
             background:
                 right calc(100%) / 50px no-repeat url('/images/discord-2.png'),
                 #24EAA4;
+
+            &.--gold {
+                background:
+                    right calc(100%) / 50px no-repeat url('/images/discord-2.png'),
+                    linear-gradient(90.00deg, rgb(254, 229, 129), rgb(206, 144, 45) 100%);
+            }
         }
     }
 

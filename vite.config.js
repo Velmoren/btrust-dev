@@ -11,6 +11,7 @@ export default defineConfig({
         faq: resolve(__dirname, 'faq.html'),
         forex: resolve(__dirname, 'forex.html'),
         program: resolve(__dirname, 'program.html'),
+        futures: resolve(__dirname, 'futures.html'),
       },
     },
   },

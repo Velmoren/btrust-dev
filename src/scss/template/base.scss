@@ -84,3 +84,9 @@ main {
 .--light-liner-bg {
     background: linear-gradient(135.00deg, rgb(41, 43, 69) 0%,rgb(15, 18, 46) 100%);
 }
+
+.--gold-text {
+    background: linear-gradient(90.00deg, rgb(254, 229, 129), rgb(206, 144, 45));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

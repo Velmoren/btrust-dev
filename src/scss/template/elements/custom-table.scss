@@ -13,13 +13,24 @@
             line-height: 20px;
             font-weight: 500;
             color: var(--bt-primary, #fff);
-            padding: 22px 0 22px 26px;
+            padding-left: 26px;
             white-space: nowrap;
+            height: 64px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
 
             &:nth-child(odd) {
                 border-top-left-radius: 15px;
                 border-bottom-left-radius: 15px;
                 background-color: rgb(54, 57, 82);
+            }
+
+            .--text-small {
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: 500;
             }
         }
     }
@@ -56,15 +67,31 @@
 
             li {
                 width: 100%;
-                padding: 22px 26px;
                 font-size: 16px;
                 line-height: 20px;
                 font-weight: 500;
                 color: var(--bt-primary, #fff);
                 white-space: nowrap;
+                height: 64px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 &:nth-child(odd) {
                     background-color: rgb(54, 57, 82);
+                }
+
+                .--text-strong {
+                    font-size: 24px;
+                    line-height: 28px;
+                    font-weight: 500;
+                    color: var(--bt-primary, #fff);
+                }
+                .--text-light {
+                    font-size: 14px;
+                    line-height: 16px;
+                    font-weight: 500;
+                    color: var(--bt-secondary, #7D7D96)
                 }
             }
         }
@@ -84,7 +111,7 @@
     @media (max-width: 1320px) {
         &__desc {
             li {
-                padding: 22px 0 22px 20px;
+                padding-left: 20px;
 
                 &:not(:first-child) {
                     font-size: 14px;
@@ -103,8 +130,6 @@
         &__item {
             &--list {
                 li {
-                    padding: 22px 20px;
-
                     &:not(:first-child) {
                         font-size: 14px;
                         line-height: 16px;
@@ -119,7 +144,7 @@
             min-width: 180px;
 
             li {
-                padding: 22px 0 22px 16px;
+                padding-left: 16px;
             }
         }
     }
@@ -129,7 +154,7 @@
             min-width: 170px;
 
             li {
-                padding: 22px 0 22px 10px;
+               padding-left: 10px;
             }
         }
     }

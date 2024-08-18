@@ -27,6 +27,10 @@
         font-weight: 700;
         padding: 8px 20px;
     }
+
+    &:active {
+        box-shadow: none !important;
+    }
 }
 
 .btn-success {
@@ -78,4 +82,63 @@
     --bt-btn-disabled-color: #2B3137;
     --bt-btn-disabled-bg: #121126;
     --bt-btn-disabled-border-color: #121126;
+}
+
+.btn-white {
+    --bt-btn-color: #121126;
+    --bt-btn-bg: #FFFFFF;
+    --bt-btn-border-color: #FFFFFF;
+    --bt-btn-hover-color: #121126;
+    --bt-btn-hover-bg: #24EAA4;
+    --bt-btn-hover-border-color: #24EAA4;
+    --bt-btn-focus-shadow-rgb: 60, 153, 110;
+    --bt-btn-active-color: #2B3137;
+    --bt-btn-active-bg: #24EAA4;
+    --bt-btn-active-border-color: #24EAA4;
+    --bt-btn-active-shadow: inset 0 3px 5px #24EAA4;
+    --bt-btn-disabled-color: #121126;
+    --bt-btn-disabled-bg: #FFFFFF;
+    --bt-btn-disabled-border-color: #FFFFFF;
+}
+
+.btn-yellow {
+    --bt-btn-color: #2B3137;
+    --bt-btn-bg: linear-gradient(90.00deg, rgb(254, 229, 129),rgb(206, 144, 45) 100%);
+    --bt-btn-border-color: transporent;
+    --bt-btn-hover-color: #2B3137;
+    --bt-btn-hover-bg: linear-gradient(90.00deg, rgb(247, 231, 169),rgb(206, 154, 70) 100%);
+    --bt-btn-hover-border-color: #414151;
+    --bt-btn-focus-shadow-rgb: 60, 153, 110;
+    --bt-btn-active-color: #2B3137;
+    --bt-btn-active-bg: #414151;
+    --bt-btn-active-border-color: #414151;
+    --bt-btn-active-shadow: inset 0 3px 5px #414151;
+    --bt-btn-disabled-color: #2B3137;
+    --bt-btn-disabled-bg: #121126;
+    --bt-btn-disabled-border-color: #121126;
+}
+
+.btn-yellow {
+    background: var(--bt-btn-bg);
+    position: relative;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: var(--bt-btn-border-radius);
+        transition: background-color .3s;
+    }
+
+    &:hover {
+        background: var(--bt-btn-bg);
+
+        &::before {
+            background-color: rgba(255, 255, 255, 15%);
+        }
+    }
 }
