@@ -10,6 +10,7 @@ export default defineConfig({
         404: resolve(__dirname, '404.html'),
         faq: resolve(__dirname, 'faq.html'),
         forex: resolve(__dirname, 'forex.html'),
+        program: resolve(__dirname, 'program.html'),
       },
     },
   },

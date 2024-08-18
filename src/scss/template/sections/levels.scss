@@ -1,0 +1,112 @@
+.levels {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background: linear-gradient(135.00deg, rgb(41, 43, 69) 0%,rgb(15, 18, 46) 100%);
+
+    @media (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    &-title {
+        margin-bottom: 20px;
+    }
+
+    &-list {
+        margin-top: 40px;
+
+        &__item {
+            border-radius: 30px;
+            border: 1px solid #2E2E48;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            overflow: hidden;
+            height: 100%;
+
+            &--img {
+                height: 153px;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            &--content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+            }
+
+            &--title {
+                font-size: 30px;
+                line-height: 42px;
+                font-weight: 500;
+
+                &.--bronze {
+                    color: #CF7F67;
+                }
+                &.--silver {
+                    color: #D6D6D6;
+                }
+                &.--gold {
+                    color: #C39540;
+                }
+                &.--platinum {
+                    color: #B5B6B8;
+                }
+            }
+
+            &--text {
+                &__head {
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-weight: 500;
+                    color: var(--bt-primary, #fff);
+                }
+                &__body {
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: 400;
+                    color: var(--bt-secondary, #7D7D96);
+                }
+            }
+        }
+
+        @media (max-width: 576px) {
+            &__item {
+                padding: 10px 20px;
+
+                &--img {
+                    height: 75px;
+                }
+
+                &--title {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+
+                &--text {
+                    &__head {
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                    &__body {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 360px) {
+            &__item {
+                padding: 10px;
+            }
+        }
+    }
+}

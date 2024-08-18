@@ -1,0 +1,39 @@
+.program-hero {
+    padding-top: 150px;
+    padding-bottom: 240px;
+    background-image: url('/images/program-img.png');
+    background-repeat: no-repeat;
+    background-position: calc(50% + 330px) calc(50% + 0px);
+    background-size: 770px;
+
+    &-title {
+        margin-bottom: 20px;
+    }
+
+    &-subtitle {
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 991px) {
+        padding-top: 75px;
+        padding-bottom: 575px;
+        background-position: 50% 200px;
+        background-size: 700px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 75px;
+        padding-bottom: 505px;
+    }
+
+    @media (max-width: 576px) {
+        padding-top: 75px;
+        padding-bottom: 480px;
+        background-position: 50% 250px;
+        background-size: 580px;
+
+        &-btn {
+            width: 100%;
+        }
+    }
+}
