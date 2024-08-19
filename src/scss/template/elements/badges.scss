@@ -1,0 +1,17 @@
+.badge {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--bt-primary, #fff);
+    padding: 5px 10px;
+    background-color: #2E2E48;
+    border-radius: 10px;
+
+    &-group {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
